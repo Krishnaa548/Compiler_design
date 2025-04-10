@@ -1,0 +1,3 @@
+gedit DFA1.l
+lex DFA1.l
+gcc lex.yy.x
