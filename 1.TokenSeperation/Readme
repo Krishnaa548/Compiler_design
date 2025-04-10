@@ -1,0 +1,15 @@
+lex Token_Separation.l
+gcc lex.yy.c
+./a.out
+
+int is a datatype
+a is an identifier
+= is an operation
+5.0 is a floating point number
+; is a delimiter
+
+int is a datatype
+b is an identifier
+= is an operation
+5 is an integer
+; is a delimiter\
