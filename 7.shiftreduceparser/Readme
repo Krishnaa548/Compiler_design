@@ -1,0 +1,17 @@
+gedit lexer.l
+gedit parser.y
+yacc -d parser.y
+lex lexer.l
+gcc lex.yy.c y.tab.c -o parser -lm
+./parser
+
+Enter an arithmetic expression: 2+3*4
+Reducing: F -> NUM
+Reducing: T -> F
+Reducing: E -> T
+Reducing: F -> NUM
+Reducing: T -> F
+Reducing: F -> NUM
+Reducing: T -> T * F
+Reducing: E -> E + T
+Parsing Complete.Result = 14
