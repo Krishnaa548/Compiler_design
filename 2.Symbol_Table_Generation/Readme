@@ -1,0 +1,13 @@
+gedit lexer.l
+lex lexer.l
+gcc lex.yy.c
+./a.out sample.c\
+
+Symbol Table:
+Name: int, Declared: 1
+Name: x, Declared: 1
+Name: float, Declared: 1
+Name: y, Declared: 1
+Name: z, Declared: 1
+Name: char, Declared: 1
+Name: Sarbojit, Declared: 1
