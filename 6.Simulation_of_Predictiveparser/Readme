@@ -1,0 +1,6 @@
+gedit lex.l
+gedit parseryac.y
+yacc -d parseryac.y
+lex lex.l
+gcc lex.yy.c y.tab.c -lfl
+./a.out
